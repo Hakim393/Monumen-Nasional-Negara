@@ -70,7 +70,7 @@ export default function App() {
             The Global Heritage Collection
           </p>
           <h1 className="text-4xl md:text-5xl font-serif italic font-light">
-            KELOMPOK 5 MULTIMEDIA
+            KELOMPOK 5 SISTEM MULTIMEDIA
           </h1>
         </div>
       </header>
@@ -225,7 +225,8 @@ export default function App() {
 
       {/* Footer */}
       <footer className="p-8 text-[10px] uppercase tracking-[0.5em] opacity-20 text-center border-t border-white/5">
-        Created by Kelompok 5 Multimedia — Monumen Nasional Tiap Negara / 2026
+        Created by Kelompok 5 Sistem Multimedia — Monumen Nasional Tiap Negara /
+        2026
       </footer>
     </div>
   );
