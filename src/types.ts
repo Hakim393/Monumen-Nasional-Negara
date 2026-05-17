@@ -31,7 +31,7 @@ export const MONUMENTS: Monument[] = [
       "Taj Mahal adalah mahakarya arsitektur marmer putih di Agra, India, yang dibangun oleh Kaisar Shah Jahan sebagai simbol cinta abadi untuk Mumtaz Mahal.",
 
     modelPath: "/models/taj_mahal.glb",
-    audioFile: "/audio/taj_mahal.mp3",
+    audioFile: "/audio/taj_mahal.MP3",
 
     themeColor: "#d6d3d1",
   },
