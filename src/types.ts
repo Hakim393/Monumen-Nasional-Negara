@@ -69,7 +69,7 @@ export const MONUMENTS: Monument[] = [
       "Menara Eiffel adalah landmark paling terkenal di Paris yang menjadi simbol romantisme, inovasi, dan kemajuan teknologi modern.",
 
     modelPath: "/models/eiffel.glb",
-    audioFile: "/audio/eiffel.mp3",
+    audioFile: "/audio/eiffel.MP3",
 
     themeColor: "#94a3b8",
   },
@@ -88,7 +88,7 @@ export const MONUMENTS: Monument[] = [
       "Statue of Liberty atau Patung Liberty merupakan salah satu simbol paling terkenal di Amerika Serikat yang terletak di Pulau Liberty, New York. Patung ini diberikan oleh Prancis kepada Amerika Serikat pada tahun 1886 sebagai lambang persahabatan dan kebebasan. Patung setinggi sekitar 93 meter ini menggambarkan seorang wanita yang memegang obor dan tablet bertuliskan tanggal kemerdekaan Amerika, yaitu 4 Juli 1776. Statue of Liberty menjadi ikon kebebasan dan harapan bagi para imigran yang datang ke Amerika melalui jalur laut.",
 
     modelPath: "/models/statue_of_liberty.glb",
-    audioFile: "/audio/statue_of_liberty.mp3",
+    audioFile: "/audio/Statue_Of_Liberty.MP3",
 
     themeColor: "#22c55e",
   },
@@ -107,7 +107,7 @@ export const MONUMENTS: Monument[] = [
       "Tembok Besar China adalah struktur pertahanan kuno terbesar di dunia yang membentang ribuan kilometer.",
 
     modelPath: "/models/great_wall_of_china.glb",
-    audioFile: "/audio/great_wall.mp3",
+    audioFile: "/audio/Great_wall_China.MP3",
 
     themeColor: "#b45309",
   },
@@ -126,7 +126,7 @@ export const MONUMENTS: Monument[] = [
       "Patung Cristo Redentor di Brasil melambangkan kedamaian, keterbukaan, dan spiritualitas.",
 
     modelPath: "/models/christ_the_redeemer_rio_de_janeiro.glb",
-    audioFile: "/audio/christ_redeemer.mp3",
+    audioFile: "/audio/Christ_The_Redeemer.MP3",
 
     themeColor: "#e5e7eb",
   },
@@ -145,7 +145,7 @@ export const MONUMENTS: Monument[] = [
       "Piramida Giza adalah keajaiban dunia kuno yang mencerminkan kecanggihan peradaban Mesir kuno.",
 
     modelPath: "/models/the_great_pyramid_of_giza.glb",
-    audioFile: "/audio/pyramids_of_giza.mp3",
+    audioFile: "/audio/Pyramids_Of_Giza.MP3",
 
     themeColor: "#ca8a04",
   },
@@ -164,7 +164,7 @@ export const MONUMENTS: Monument[] = [
       "Big Ben adalah menara jam legendaris di London yang menjadi simbol budaya dan sejarah Inggris.",
 
     modelPath: "/models/big_ben.glb",
-    audioFile: "/audio/big_ben.mp3",
+    audioFile: "/audio/Bigben.MP3",
 
     themeColor: "#64748b",
   },
@@ -183,7 +183,7 @@ export const MONUMENTS: Monument[] = [
       "Tokyo Tower adalah menara komunikasi ikonik Jepang yang melambangkan modernisasi pasca perang.",
 
     modelPath: "/models/tokyo_tower.glb",
-    audioFile: "/audio/tokyo_tower.mp3",
+    audioFile: "/audio/tokyo_tower.MP3",
 
     themeColor: "#ef4444",
   },
@@ -202,7 +202,7 @@ export const MONUMENTS: Monument[] = [
       "Sydney Opera House adalah gedung seni pertunjukan paling terkenal di dunia dengan desain futuristik ikonik.",
 
     modelPath: "/models/sydney_opera_house.glb",
-    audioFile: "/audio/sydney_opera_house.mp3",
+    audioFile: "/audio/Sydney_Opera_house.MP3",
 
     themeColor: "#38bdf8",
   },
@@ -240,7 +240,7 @@ export const MONUMENTS: Monument[] = [
       "Sagrada Familia adalah Sebuah basilika Katolik megah di Barcelona yang menjadi ikon arsitektur Modernisme Catalan. Dirancang oleh Antoni Gaudí, bangunan ini memadukan bentuk-bentuk geometris organik yang terinspirasi dari alam dan hutan. Konstruksinya murni didanai oleh donasi publik dan tiket masuk wisatawan, menjadikannya salah satu proyek pembangunan terlama di dunia.",
 
     modelPath: "/models/barcelona_sagrada_familia_2.glb",
-    audioFile: "/audio/sagrada_familia.mp3",
+    audioFile: "/audio/Segrada_Familia.MP3",
 
     themeColor: "#f59e0b",
   },
@@ -259,7 +259,7 @@ export const MONUMENTS: Monument[] = [
       "Saint Basil Cathedral adalah Katedral unik yang berdiri di pusat kota Moskow ini aslinya bernama Cathedral of the Intercession. Bangunan ini terkenal karena desain geometrisnya yang asimetris namun harmonis, menampilkan sembilan kapel dengan kubah berbentuk bawang yang dicat dengan pola warna-warni cerah, mencerminkan gaya arsitektur tradisional Rusia yang khas.",
 
     modelPath: "/models/saint_basils_cathedral_3d_model.glb",
-    audioFile: "/audio/saint_basil.mp3",
+    audioFile: "/audio/Saint_Basil_Cathedral.MP3",
 
     themeColor: "#dc2626",
   },
@@ -278,7 +278,7 @@ export const MONUMENTS: Monument[] = [
       "Hagia Sophia adalah Sebuah mahakarya arsitektur yang dibangun di Konstantinopel (sekarang Istanbul) pada abad ke-6 di bawah perintah Kaisar Bizantium, Justinian I. Monumen ini merevolusi sejarah arsitektur dunia melalui teknik pembuatan kubah gantung raksasanya yang sangat besar, menjadikannya simbol keagamaan dan politik yang penting lintas zaman.",
 
     modelPath: "/models/mosque.glb",
-    audioFile: "/audio/hagia_sophia.mp3",
+    audioFile: "/audio/hagia_sophia.MP3",
 
     themeColor: "#c084fc",
   },
@@ -297,7 +297,7 @@ export const MONUMENTS: Monument[] = [
       "Parthenon merupakan Kuil kuno yang mendominasi bukit Akropolis di Athena, dibangun antara tahun 447 dan 432 SM. Dirancang oleh arsitek Ictinus dan Callicrates di bawah pengawasan pemahat Phidias, kuil ini merupakan pencapaian tertinggi arsitektur klasik ordo Dorik yang awalnya dibangun untuk menyimpan patung emas dan gading raksasa dewi Athena Parthenos.",
 
     modelPath: "/models/parthenon_athenes.glb",
-    audioFile: "/audio/parthenon.mp3",
+    audioFile: "/audio/Parthenon.MP3",
 
     themeColor: "#d4d4d8",
   },
@@ -316,7 +316,7 @@ export const MONUMENTS: Monument[] = [
       "Chichen Itza adalah situs bersejarah peradaban Maya yang terkenal dengan piramida El Castillo.",
 
     modelPath: "/models/chichen_itza_pyramid_3d_reconstruction.glb",
-    audioFile: "/audio/chichen_itza.mp3",
+    audioFile: "/audio/Chicen Itza.MP3",
 
     themeColor: "#f97316",
   },
