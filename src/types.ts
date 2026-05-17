@@ -3,9 +3,17 @@ export interface Monument {
   name: string;
   country: string;
   isoCode: string;
+
+  location: string;
+  continent: string;
+  yearBuilt: string;
+
   description: string;
-  audioDescription: string;
+
   modelPath: string;
+  audioFile: string;
+
+  themeColor?: string;
 }
 
 export const MONUMENTS: Monument[] = [
@@ -14,166 +22,302 @@ export const MONUMENTS: Monument[] = [
     name: "Taj Mahal",
     country: "India",
     isoCode: "in",
+
+    location: "Agra",
+    continent: "Asia",
+    yearBuilt: "1632",
+
     description:
-      "Taj Mahal adalah mahakarya arsitektur marmer putih yang terletak di Agra, India, dan dikenal sebagai simbol cinta abadi. Dibangun pada abad ke-17 oleh Kaisar Mughal Shah Jahan untuk mengenang istrinya, Mumtaz Mahal, bangunan ini memadukan keindahan seni Islam, Persia, dan India dalam harmoni yang sempurna. Dengan kubah megah, taman simetris, dan detail ukiran yang rumit, Taj Mahal tidak hanya menjadi salah satu keajaiban dunia, tetapi juga melambangkan keindahan, kesedihan, dan keabadian cinta dalam sejarah manusia.",
-    audioDescription:
-      "Taj Mahal adalah salah satu mahakarya arsitektur paling menakjubkan di dunia yang berdiri megah di kota Agra, India, dibangun dari marmer putih yang berkilau dan dikenal luas sebagai simbol cinta abadi. Monumen ini didirikan pada abad ke-17 oleh Kaisar Mughal Shah Jahan sebagai bentuk penghormatan mendalam kepada istrinya tercinta, Mumtaz Mahal, yang wafat saat melahirkan, menjadikan Taj Mahal bukan hanya sekadar bangunan indah, tetapi juga perwujudan emosi manusia yang begitu kuat. Pembangunannya dimulai pada tahun 1632 dan melibatkan ribuan pengrajin, seniman, serta arsitek dari berbagai wilayah seperti Persia, Turki, dan Asia Tengah, dengan proses yang berlangsung selama lebih dari dua dekade, menunjukkan tingkat dedikasi dan ketelitian luar biasa dalam setiap detailnya. Secara arsitektural, Taj Mahal merupakan perpaduan harmonis dari gaya Islam, Persia, dan India, terlihat dari kubah utamanya yang megah, empat menara tinggi yang berdiri simetris di setiap sudut, serta taman luas bergaya charbagh yang dirancang dengan konsep keseimbangan dan melambangkan gambaran surga. Keindahan bangunan ini semakin diperkuat oleh ukiran halus, kaligrafi ayat-ayat suci, serta ornamen batu mulia yang disusun dengan presisi tinggi, menciptakan kesan elegan dan abadi yang sulit ditandingi. Selain keindahan visualnya, Taj Mahal juga menyimpan makna mendalam tentang cinta, kehilangan, dan keabadian, menjadikannya bukan hanya sebagai salah satu dari Tujuh Keajaiban Dunia, tetapi juga simbol universal yang menyentuh hati banyak orang. Hingga kini, jutaan pengunjung dari seluruh dunia datang untuk menyaksikan langsung keindahannya, merasakan atmosfer yang tenang dan sakral, serta memahami kisah cinta yang terukir dalam setiap detail bangunannya, menjadikan Taj Mahal sebagai salah satu warisan budaya paling berharga dalam sejarah peradaban manusia.",
+      "Taj Mahal adalah mahakarya arsitektur marmer putih di Agra, India, yang dibangun oleh Kaisar Shah Jahan sebagai simbol cinta abadi untuk Mumtaz Mahal.",
+
     modelPath: "/models/taj_mahal.glb",
+    audioFile: "/audio/taj_mahal.mp3",
+
+    themeColor: "#d6d3d1",
   },
+
   {
     id: "indonesia",
     name: "Monas",
     country: "Indonesia",
     isoCode: "id",
+
+    location: "Jakarta",
+    continent: "Asia",
+    yearBuilt: "1961",
+
     description:
-      "Monumen Nasional (Monas) adalah ikon kebanggaan Indonesia yang terletak di pusat kota Jakarta. Dibangun untuk mengenang perjuangan bangsa dalam meraih kemerdekaan, monumen setinggi 132 meter ini melambangkan semangat, keberanian, dan tekad rakyat Indonesia. Di puncaknya terdapat lidah api berlapis emas yang menjadi simbol semangat perjuangan yang tidak pernah padam. Selain sebagai landmark bersejarah, Monas juga menjadi ruang edukasi dan wisata yang memperkenalkan perjalanan panjang sejarah Indonesia kepada dunia.",
-    audioDescription:
-      "Monumen Nasional atau yang lebih dikenal sebagai Monas merupakan salah satu ikon paling penting dan bersejarah di Indonesia yang terletak di pusat kota Jakarta, tepatnya di Lapangan Medan Merdeka. Monumen setinggi 132 meter ini dibangun sebagai simbol perjuangan dan semangat rakyat Indonesia dalam meraih kemerdekaan dari penjajahan, serta menjadi pengingat akan pengorbanan besar yang telah dilakukan oleh para pahlawan bangsa. Pembangunan Monas dimulai pada tahun 1961 atas gagasan Presiden pertama Indonesia, Ir. Soekarno, dan dirancang oleh arsitek Frederich Silaban dengan konsep yang sarat makna filosofis, di mana bentuknya melambangkan lingga dan yoni sebagai representasi keseimbangan antara kekuatan dan kesuburan dalam kehidupan. Di bagian puncaknya terdapat lidah api yang dilapisi emas murni, yang melambangkan semangat perjuangan rakyat Indonesia yang tidak pernah padam, bahkan dalam menghadapi berbagai tantangan dan perubahan zaman. Di dalam Monas, terdapat museum diorama yang menggambarkan perjalanan sejarah Indonesia mulai dari masa kerajaan, penjajahan, hingga kemerdekaan, memberikan pengalaman edukatif yang mendalam bagi para pengunjung. Selain itu, pengunjung juga dapat naik ke puncak Monas untuk menikmati pemandangan luas kota Jakarta dari ketinggian, menciptakan pengalaman yang tidak hanya informatif tetapi juga mengesankan secara visual. Lebih dari sekadar bangunan, Monas merupakan simbol identitas nasional yang mencerminkan persatuan, keberanian, dan tekad bangsa Indonesia dalam menjaga kedaulatan dan warisan budayanya. Hingga saat ini, Monas tidak hanya menjadi destinasi wisata populer, tetapi juga ruang publik yang hidup, tempat masyarakat berkumpul, belajar, dan merayakan semangat kebangsaan, menjadikannya sebagai salah satu monumen paling bermakna dalam sejarah dan kehidupan modern Indonesia.",
+      "Monumen Nasional atau Monas merupakan simbol perjuangan rakyat Indonesia yang berdiri megah di pusat kota Jakarta dengan tinggi 132 meter.",
+
     modelPath: "/models/monas2.glb",
+    audioFile: "/audio/monas.MP3",
+
+    themeColor: "#facc15",
   },
+
   {
     id: "france",
     name: "Eiffel Tower",
     country: "France",
     isoCode: "fr",
+
+    location: "Paris",
+    continent: "Europe",
+    yearBuilt: "1889",
+
     description:
-      "Menara Eiffel adalah menara besi ikonik yang terletak di jantung kota Paris, Prancis. Dibangun pada tahun 1889 untuk Pameran Dunia, menara ini awalnya menuai kontroversi namun kini justru menjadi simbol kemajuan teknologi dan keindahan arsitektur modern. Dengan ketinggian lebih dari 300 meter, Menara Eiffel tidak hanya menawarkan pemandangan spektakuler kota Paris, tetapi juga menjadi salah satu landmark paling terkenal dan dikunjungi di dunia, melambangkan romantisme, inovasi, dan warisan budaya yang abadi.",
-    audioDescription:
-      "Menara Eiffel merupakan salah satu ikon arsitektur paling terkenal di dunia yang berdiri megah di kota Paris, Prancis, dan menjadi simbol kemajuan teknologi serta keindahan desain sejak akhir abad ke-19. Dibangun untuk Pameran Dunia tahun 1889 yang diselenggarakan untuk memperingati seratus tahun Revolusi Prancis, menara ini dirancang oleh insinyur Gustave Eiffel bersama timnya sebagai demonstrasi kemampuan teknik modern pada masanya. Dengan ketinggian lebih dari 300 meter, Menara Eiffel sempat menjadi struktur tertinggi di dunia selama beberapa dekade dan mencerminkan pencapaian luar biasa dalam bidang rekayasa konstruksi. Pada awal pembangunannya, menara ini sempat menuai kritik dari banyak seniman dan intelektual yang menganggapnya merusak estetika kota Paris, namun seiring berjalannya waktu, persepsi tersebut berubah drastis dan Menara Eiffel justru menjadi simbol kebanggaan nasional serta daya tarik utama yang mendunia. Struktur besinya yang unik, terdiri dari ribuan komponen logam yang disusun dengan presisi tinggi, tidak hanya menunjukkan keindahan visual tetapi juga kekuatan dan efisiensi desain teknik. Menara ini juga berfungsi sebagai pusat eksperimen ilmiah, termasuk penelitian komunikasi radio pada masa awal perkembangan teknologi tersebut. Pengunjung yang datang dapat menaiki menara hingga ke berbagai tingkat observasi untuk menikmati panorama kota Paris yang menakjubkan, mulai dari Sungai Seine hingga bangunan-bangunan bersejarah yang membentang luas di sekitarnya. Pada malam hari, Menara Eiffel dihiasi dengan ribuan lampu yang berkilauan, menciptakan suasana romantis yang semakin mengukuhkan posisinya sebagai salah satu landmark paling ikonik di dunia. Lebih dari sekadar bangunan, Menara Eiffel merupakan simbol perpaduan antara inovasi, seni, dan sejarah, serta menjadi representasi semangat manusia dalam menciptakan sesuatu yang melampaui batas zamannya, menjadikannya sebagai salah satu warisan budaya yang terus menginspirasi jutaan orang dari berbagai penjuru dunia hingga saat ini.",
+      "Menara Eiffel adalah landmark paling terkenal di Paris yang menjadi simbol romantisme, inovasi, dan kemajuan teknologi modern.",
+
     modelPath: "/models/eiffel.glb",
+    audioFile: "/audio/eiffel.mp4",
+
+    themeColor: "#94a3b8",
   },
+
   {
     id: "usa",
     name: "Statue of Liberty",
     country: "United States",
     isoCode: "us",
+
+    location: "New York",
+    continent: "North America",
+    yearBuilt: "1886",
+
     description:
-      "Patung Liberty adalah simbol kebebasan dan harapan yang terletak di New York.",
-    audioDescription:
-      "Statue of Liberty atau Patung Liberty merupakan salah satu simbol paling terkenal di dunia yang berdiri megah di Liberty Island, New York, Amerika Serikat, dan melambangkan kebebasan, harapan, serta semangat demokrasi yang dijunjung tinggi oleh negara tersebut. Patung ini merupakan hadiah dari rakyat Prancis kepada Amerika Serikat pada tahun 1886 sebagai tanda persahabatan dan untuk memperingati seratus tahun Deklarasi Kemerdekaan Amerika. Dirancang oleh pematung Frédéric Auguste Bartholdi dengan struktur internal yang dikembangkan oleh insinyur Gustave Eiffel, patung ini memiliki tinggi sekitar 93 meter dari dasar hingga ujung obor, menjadikannya salah satu struktur monumental yang sangat mengesankan pada masanya. Secara visual, patung ini menggambarkan sosok wanita yang melambangkan Libertas, dewi kebebasan dalam mitologi Romawi, yang memegang obor di tangan kanan sebagai simbol pencerahan dan sebuah tablet di tangan kiri yang bertuliskan tanggal kemerdekaan Amerika, yaitu 4 Juli 1776. Di kakinya terdapat rantai yang terputus, melambangkan pembebasan dari penindasan dan tirani. Selama bertahun-tahun, Statue of Liberty menjadi simbol harapan bagi jutaan imigran yang tiba di Amerika melalui pelabuhan New York, sebagai tanda awal kehidupan baru yang penuh peluang. Secara arsitektural, patung ini dibuat dari lembaran tembaga yang dipasang di atas rangka baja, memungkinkan struktur tersebut bertahan terhadap angin kencang dan perubahan cuaca. Hingga saat ini, patung ini tetap menjadi salah satu destinasi wisata paling populer di dunia, menarik jutaan pengunjung yang datang untuk melihat langsung keindahan dan makna historisnya. Lebih dari sekadar monumen, Statue of Liberty merupakan representasi nilai-nilai universal tentang kebebasan, keadilan, dan kesempatan, menjadikannya sebagai ikon global yang terus menginspirasi generasi demi generasi di seluruh dunia.",
+      "Statue of Liberty atau Patung Liberty merupakan salah satu simbol paling terkenal di Amerika Serikat yang terletak di Pulau Liberty, New York. Patung ini diberikan oleh Prancis kepada Amerika Serikat pada tahun 1886 sebagai lambang persahabatan dan kebebasan. Patung setinggi sekitar 93 meter ini menggambarkan seorang wanita yang memegang obor dan tablet bertuliskan tanggal kemerdekaan Amerika, yaitu 4 Juli 1776. Statue of Liberty menjadi ikon kebebasan dan harapan bagi para imigran yang datang ke Amerika melalui jalur laut.",
+
     modelPath: "/models/statue_of_liberty.glb",
+    audioFile: "/audio/statue_of_liberty.mp3",
+
+    themeColor: "#22c55e",
   },
+
   {
     id: "china",
     name: "Great Wall",
     country: "China",
     isoCode: "cn",
+
+    location: "Northern China",
+    continent: "Asia",
+    yearBuilt: "700 BC",
+
     description:
-      "Tembok Besar China adalah struktur pertahanan kuno yang membentang ribuan kilometer.",
-    audioDescription:
-      "Tembok Besar China merupakan salah satu keajaiban arsitektur terbesar dalam sejarah manusia yang membentang melintasi pegunungan, gurun, dan dataran luas di wilayah utara China, dengan panjang keseluruhan yang mencapai lebih dari 20.000 kilometer. Pembangunan tembok ini dimulai sejak abad ke-7 sebelum Masehi dan terus berkembang selama berbagai dinasti, terutama pada masa Dinasti Ming, dengan tujuan utama sebagai sistem pertahanan untuk melindungi wilayah kekaisaran dari serangan suku nomaden di utara. Struktur ini dibangun menggunakan berbagai material seperti batu, tanah yang dipadatkan, dan bata, disesuaikan dengan kondisi geografis setempat, menunjukkan kemampuan adaptasi dan kecanggihan teknik konstruksi pada masa itu. Selain berfungsi sebagai benteng pertahanan, Tembok Besar juga digunakan sebagai jalur komunikasi militer, di mana menara-menara pengawas dibangun secara berkala untuk mengirimkan sinyal asap atau api sebagai peringatan dini terhadap ancaman musuh. Secara arsitektural, tembok ini tidak hanya mengesankan dari segi ukuran, tetapi juga dari segi desain yang mengikuti kontur alam dengan sangat presisi, menciptakan pemandangan yang dramatis dan harmonis dengan lanskap sekitarnya. Pembangunan tembok ini melibatkan jutaan pekerja selama berabad-abad, menjadikannya salah satu proyek konstruksi terbesar dan paling ambisius dalam sejarah manusia, sekaligus mencerminkan kekuatan organisasi dan ketahanan masyarakat Tiongkok kuno. Hingga saat ini, Tembok Besar China tidak hanya menjadi simbol pertahanan dan kekuatan, tetapi juga menjadi ikon budaya dan warisan dunia yang diakui oleh UNESCO, menarik jutaan pengunjung setiap tahunnya yang datang untuk menyaksikan langsung keagungan dan sejarah panjang yang melekat pada setiap bagiannya. Lebih dari sekadar bangunan, Tembok Besar China merupakan representasi dari tekad, ketekunan, dan kemampuan manusia untuk menciptakan sesuatu yang luar biasa dalam menghadapi tantangan alam dan waktu, menjadikannya sebagai salah satu simbol paling kuat dari peradaban dunia.",
+      "Tembok Besar China adalah struktur pertahanan kuno terbesar di dunia yang membentang ribuan kilometer.",
+
     modelPath: "/models/great_wall_of_china.glb",
+    audioFile: "/audio/great_wall.mp3",
+
+    themeColor: "#b45309",
   },
+
   {
     id: "brazil",
     name: "Christ the Redeemer",
     country: "Brazil",
     isoCode: "br",
+
+    location: "Rio de Janeiro",
+    continent: "South America",
+    yearBuilt: "1931",
+
     description:
-      "Patung Yesus raksasa di Rio de Janeiro yang melambangkan kedamaian.",
-    audioDescription:
-      "Christ the Redeemer atau Cristo Redentor merupakan salah satu patung paling ikonik di dunia yang berdiri megah di puncak Gunung Corcovado, menghadap kota Rio de Janeiro, Brasil, dan menjadi simbol kuat dari iman, kedamaian, serta keterbukaan. Dibangun antara tahun 1922 hingga 1931, patung ini dirancang oleh insinyur Brasil Heitor da Silva Costa dan dipahat oleh pematung Prancis Paul Landowski, dengan tinggi mencapai sekitar 30 meter, belum termasuk pedestalnya yang menambah ketinggian keseluruhan. Dengan posisi tangan terbuka yang membentang luas, patung ini melambangkan penerimaan, perlindungan, dan kasih bagi seluruh umat manusia, sekaligus menjadi representasi visual yang kuat dari nilai-nilai spiritual dan kemanusiaan. Secara arsitektural, patung ini dibuat dari beton bertulang dan dilapisi batu sabun, yang memberikan daya tahan terhadap cuaca serta tampilan yang halus dan elegan. Lokasinya yang berada di ketinggian sekitar 700 meter di atas permukaan laut menjadikan Christ the Redeemer terlihat dari berbagai penjuru kota, menciptakan kesan bahwa patung ini selalu “mengawasi” dan melindungi Rio de Janeiro. Selain sebagai simbol religius, patung ini juga menjadi salah satu daya tarik wisata terbesar di dunia, menarik jutaan pengunjung setiap tahunnya yang datang untuk menyaksikan keindahan panorama kota, pantai, dan pegunungan yang mengelilinginya. Pada tahun 2007, Christ the Redeemer dinobatkan sebagai salah satu dari Tujuh Keajaiban Dunia Baru, semakin memperkuat statusnya sebagai ikon global yang dikenal luas. Lebih dari sekadar karya seni atau monumen, patung ini mencerminkan perpaduan antara kepercayaan, budaya, dan keindahan alam yang harmonis, menjadikannya sebagai simbol universal dari harapan, perdamaian, dan persatuan yang melampaui batas negara dan waktu.",
+      "Patung Cristo Redentor di Brasil melambangkan kedamaian, keterbukaan, dan spiritualitas.",
+
     modelPath: "/models/christ_the_redeemer_rio_de_janeiro.glb",
+    audioFile: "/audio/christ_redeemer.mp3",
+
+    themeColor: "#e5e7eb",
   },
+
   {
     id: "egypt",
     name: "Pyramids of Giza",
     country: "Egypt",
     isoCode: "eg",
+
+    location: "Giza",
+    continent: "Africa",
+    yearBuilt: "2560 BC",
+
     description:
-      "Piramida Giza adalah keajaiban dunia kuno yang mencerminkan peradaban Mesir.",
-    audioDescription:
-      "Piramida Giza merupakan salah satu keajaiban dunia kuno yang paling menakjubkan dan terletak di dataran tinggi Giza, dekat kota Kairo, Mesir, menjadi simbol keagungan serta kecanggihan peradaban Mesir kuno yang telah bertahan selama ribuan tahun. Kompleks ini terdiri dari tiga piramida utama, yaitu Piramida Khufu atau Cheops yang terbesar, Piramida Khafre, dan Piramida Menkaure, yang dibangun sebagai makam bagi para firaun pada sekitar 2.500 tahun sebelum Masehi. Dari ketiga piramida tersebut, Piramida Khufu adalah yang paling besar dan merupakan satu-satunya dari Tujuh Keajaiban Dunia Kuno yang masih berdiri hingga saat ini, menunjukkan kehebatan teknik konstruksi yang luar biasa pada masa itu. Struktur piramida ini dibangun dari jutaan blok batu kapur yang masing-masing memiliki berat berton-ton, disusun dengan presisi tinggi tanpa bantuan teknologi modern, sehingga hingga kini masih menjadi misteri bagaimana proses pembangunannya dilakukan dengan tingkat akurasi yang begitu tinggi. Secara arsitektural, piramida dirancang dengan orientasi yang sangat presisi terhadap arah mata angin, mencerminkan pemahaman mendalam masyarakat Mesir kuno terhadap astronomi dan kosmologi. Selain sebagai makam, piramida juga memiliki makna spiritual yang sangat penting, karena dipercaya sebagai sarana bagi jiwa firaun untuk menuju kehidupan setelah mati, menjadikannya sebagai pusat ritual keagamaan yang sakral. Di dekat kompleks ini juga terdapat Patung Sphinx yang terkenal, menambah nilai historis dan simbolis kawasan tersebut sebagai pusat kebudayaan kuno. Hingga saat ini, Piramida Giza terus menjadi objek penelitian arkeologi yang penting sekaligus destinasi wisata yang menarik jutaan pengunjung dari seluruh dunia, yang datang untuk menyaksikan langsung keajaiban arsitektur yang telah bertahan melintasi waktu. Lebih dari sekadar bangunan, Piramida Giza adalah bukti nyata dari kecerdasan, kekuatan organisasi, dan kepercayaan spiritual manusia pada masa lampau, menjadikannya sebagai salah satu warisan paling berharga dalam sejarah peradaban dunia.",
+      "Piramida Giza adalah keajaiban dunia kuno yang mencerminkan kecanggihan peradaban Mesir kuno.",
+
     modelPath: "/models/the_great_pyramid_of_giza.glb",
+    audioFile: "/audio/pyramids_of_giza.mp3",
+
+    themeColor: "#ca8a04",
   },
+
   {
     id: "uk",
     name: "Big Ben",
     country: "United Kingdom",
     isoCode: "gb",
-    description: "Big Ben adalah menara jam ikonik di London.",
-    audioDescription:
-      "Big Ben merupakan salah satu landmark paling terkenal di dunia yang terletak di kota London, Inggris, dan sering kali dianggap sebagai simbol utama dari identitas serta sejarah panjang Britania Raya. Secara teknis, nama Big Ben sebenarnya merujuk pada lonceng besar yang berada di dalam menara jam, sementara menara itu sendiri dikenal sebagai Elizabeth Tower, yang merupakan bagian dari kompleks Istana Westminster, pusat pemerintahan Inggris. Menara ini selesai dibangun pada tahun 1859 dan dirancang oleh arsitek Charles Barry bersama Augustus Pugin dengan gaya arsitektur Neo-Gothic yang khas, menampilkan detail ornamen yang elegan dan struktur yang menjulang tinggi. Jam pada menara ini dikenal karena tingkat akurasinya yang luar biasa, bahkan menjadi standar waktu nasional selama bertahun-tahun, serta mekanisme jamnya yang dirancang dengan presisi tinggi untuk menjaga ketepatan waktu meskipun menghadapi berbagai kondisi cuaca. Dentangan lonceng Big Ben yang khas telah menjadi suara yang sangat dikenal di seluruh dunia, sering disiarkan melalui radio dan televisi, terutama pada momen-momen penting seperti pergantian tahun. Selain fungsi praktisnya sebagai penunjuk waktu, Big Ben juga memiliki makna simbolis yang mendalam, mencerminkan stabilitas, tradisi, dan kontinuitas pemerintahan Inggris selama berabad-abad. Menara ini telah menjadi saksi berbagai peristiwa penting dalam sejarah, termasuk masa perang, perubahan politik, dan perkembangan sosial yang membentuk Inggris modern. Hingga saat ini, Big Ben tetap menjadi daya tarik utama bagi wisatawan dari seluruh dunia yang datang untuk menyaksikan langsung keindahan arsitektur dan mendengar dentangan loncengnya yang legendaris. Lebih dari sekadar jam, Big Ben adalah representasi dari warisan budaya, ketahanan, dan identitas nasional Inggris yang terus bertahan dan dihormati dari generasi ke generasi.",
+
+    location: "London",
+    continent: "Europe",
+    yearBuilt: "1859",
+
+    description:
+      "Big Ben adalah menara jam legendaris di London yang menjadi simbol budaya dan sejarah Inggris.",
+
     modelPath: "/models/big_ben.glb",
+    audioFile: "/audio/big_ben.mp3",
+
+    themeColor: "#64748b",
   },
+
   {
     id: "japan",
     name: "Tokyo Tower",
     country: "Japan",
     isoCode: "jp",
-    description: "Menara komunikasi ikonik di Tokyo.",
-    audioDescription:
-      "Tokyo Tower merupakan salah satu landmark paling ikonik di Jepang yang berdiri megah di pusat kota Tokyo dan menjadi simbol kebangkitan serta modernisasi negara tersebut setelah Perang Dunia II. Dibangun pada tahun 1958, menara ini terinspirasi dari desain Menara Eiffel di Paris, namun memiliki karakteristik unik dengan warna merah dan putih yang mencolok, sesuai dengan standar keselamatan penerbangan di Jepang. Dengan ketinggian mencapai 333 meter, Tokyo Tower sempat menjadi struktur tertinggi di Jepang pada masanya dan berfungsi sebagai menara komunikasi yang penting untuk penyiaran televisi dan radio, sekaligus menjadi simbol kemajuan teknologi yang pesat di era pascaperang. Secara arsitektural, menara ini dirancang dengan struktur baja yang kuat namun ringan, menunjukkan efisiensi teknik Jepang dalam menciptakan bangunan tinggi yang tahan terhadap gempa, sebuah faktor penting mengingat kondisi geografis negara tersebut. Selain fungsi teknisnya, Tokyo Tower juga menjadi destinasi wisata populer yang menawarkan dek observasi dengan pemandangan spektakuler kota Tokyo yang luas, terutama pada malam hari ketika lampu kota menciptakan panorama yang memukau. Di dalam kompleksnya, terdapat berbagai fasilitas seperti museum, restoran, dan area hiburan yang menambah daya tarik bagi pengunjung dari berbagai kalangan. Tokyo Tower juga sering digunakan sebagai simbol dalam budaya populer Jepang, muncul dalam film, anime, dan berbagai media lainnya, memperkuat posisinya sebagai ikon budaya modern. Seiring perkembangan teknologi, peran komunikasi utama kini telah beralih ke Tokyo Skytree, namun Tokyo Tower tetap mempertahankan nilai historis dan sentimentalnya sebagai simbol era pertumbuhan ekonomi Jepang yang luar biasa. Hingga saat ini, menara ini tidak hanya menjadi objek wisata, tetapi juga lambang semangat, ketahanan, dan inovasi Jepang dalam menghadapi perubahan zaman, menjadikannya sebagai salah satu struktur paling berpengaruh dan dikenang dalam lanskap perkotaan Tokyo.",
+
+    location: "Tokyo",
+    continent: "Asia",
+    yearBuilt: "1958",
+
+    description:
+      "Tokyo Tower adalah menara komunikasi ikonik Jepang yang melambangkan modernisasi pasca perang.",
+
     modelPath: "/models/tokyo_tower.glb",
+    audioFile: "/audio/tokyo_tower.mp4",
+
+    themeColor: "#ef4444",
   },
+
   {
     id: "australia",
     name: "Sydney Opera House",
     country: "Australia",
     isoCode: "au",
-    description: "Gedung seni pertunjukan ikonik di Sydney.",
-    audioDescription:
-      "Sydney Opera House merupakan salah satu ikon arsitektur paling terkenal di dunia yang terletak di pelabuhan Sydney, Australia, dan dikenal karena desainnya yang unik menyerupai layar kapal yang mengembang tertiup angin. Bangunan ini dirancang oleh arsitek asal Denmark, Jørn Utzon, dan pembangunannya dimulai pada tahun 1959 sebelum akhirnya selesai pada tahun 1973, melalui proses panjang yang penuh tantangan teknis dan kontroversi desain. Keunikan struktur atapnya yang berbentuk cangkang menjadi inovasi besar dalam dunia arsitektur modern, karena membutuhkan pendekatan teknik yang belum pernah digunakan sebelumnya untuk mewujudkannya. Sydney Opera House tidak hanya berfungsi sebagai gedung pertunjukan seni, tetapi juga sebagai pusat budaya yang menampung berbagai acara seperti opera, konser musik, teater, dan pertunjukan seni lainnya dari seluruh dunia. Interiornya dirancang dengan memperhatikan akustik yang optimal, sehingga setiap pertunjukan dapat dinikmati dengan kualitas suara yang luar biasa. Lokasinya yang berada di tepi laut menambah keindahan visual bangunan ini, menciptakan perpaduan harmonis antara arsitektur modern dan lanskap alam sekitarnya. Pada tahun 2007, Sydney Opera House diakui sebagai Situs Warisan Dunia oleh UNESCO, menegaskan pentingnya bangunan ini sebagai salah satu karya arsitektur paling berpengaruh di abad ke-20. Selain menjadi pusat seni dan budaya, bangunan ini juga berfungsi sebagai simbol identitas nasional Australia dan menjadi daya tarik wisata utama yang dikunjungi jutaan orang setiap tahunnya. Pada malam hari, pencahayaan yang indah semakin menonjolkan bentuk uniknya, menjadikannya pemandangan yang spektakuler dan mudah dikenali di seluruh dunia. Lebih dari sekadar bangunan, Sydney Opera House merupakan representasi dari kreativitas, inovasi, dan keberanian dalam mengeksplorasi bentuk baru dalam arsitektur, menjadikannya sebagai salah satu landmark paling inspiratif dalam sejarah modern.",
+
+    location: "Sydney",
+    continent: "Australia",
+    yearBuilt: "1973",
+
+    description:
+      "Sydney Opera House adalah gedung seni pertunjukan paling terkenal di dunia dengan desain futuristik ikonik.",
+
     modelPath: "/models/sydney_opera_house.glb",
+    audioFile: "/audio/sydney_opera_house.mp3",
+
+    themeColor: "#38bdf8",
   },
+
   {
     id: "uae",
     name: "Burj Khalifa",
     country: "United Arab Emirates",
     isoCode: "ae",
-    description: "Gedung tertinggi di dunia di Dubai.",
-    audioDescription:
-      "Burj Khalifa merupakan pencakar langit tertinggi di dunia yang berdiri megah di kota Dubai, Uni Emirat Arab, dan menjadi simbol kemajuan teknologi, ambisi, serta transformasi modern sebuah kota di tengah gurun. Dengan ketinggian mencapai lebih dari 828 meter, bangunan ini tidak hanya memecahkan berbagai rekor dunia, tetapi juga merepresentasikan kemampuan manusia dalam mendorong batas-batas teknik dan desain arsitektur. Pembangunan Burj Khalifa dimulai pada tahun 2004 dan selesai pada tahun 2010, dirancang oleh arsitek Adrian Smith dari firma Skidmore, Owings & Merrill, dengan konsep desain yang terinspirasi dari bentuk bunga gurun Hymenocallis, menghasilkan struktur yang ramping dan menjulang secara elegan ke langit. Dari segi teknik, bangunan ini menggunakan sistem struktur inovatif yang disebut buttressed core, yang memungkinkan stabilitas maksimal terhadap angin kencang dan tekanan ekstrem pada ketinggian yang luar biasa. Interior Burj Khalifa dirancang dengan kemewahan tinggi, mencakup hotel, apartemen residensial, kantor, serta dek observasi yang menawarkan pemandangan spektakuler kota Dubai dan sekitarnya, termasuk gurun luas dan Teluk Persia. Salah satu daya tarik utama adalah dek observasi di lantai atas yang memungkinkan pengunjung merasakan sensasi berada di salah satu titik tertinggi di dunia yang dapat diakses manusia. Selain sebagai bangunan, Burj Khalifa juga menjadi pusat berbagai pertunjukan spektakuler, termasuk pertunjukan cahaya dan kembang api yang sering diadakan pada perayaan besar, menjadikannya ikon global yang sering muncul dalam berbagai media. Lebih dari sekadar struktur fisik, Burj Khalifa melambangkan visi masa depan, keberanian untuk bermimpi besar, serta transformasi Dubai dari kota pelabuhan sederhana menjadi pusat ekonomi dan pariwisata kelas dunia. Hingga saat ini, bangunan ini terus menarik jutaan pengunjung setiap tahunnya, menjadikannya salah satu landmark paling mengesankan dan inspiratif dalam dunia arsitektur modern.",
+
+    location: "Dubai",
+    continent: "Asia",
+    yearBuilt: "2010",
+
+    description:
+      "Burj Khalifa merupakan gedung tertinggi di dunia dan simbol kemajuan modern kota Dubai.",
+
     modelPath: "/models/free__burj_khalifa_dubai.glb",
+    audioFile: "/audio/Burj khalifa.mp4",
+
+    themeColor: "#94a3b8",
   },
+
   {
     id: "spain",
     name: "Sagrada Familia",
     country: "Spain",
     isoCode: "es",
-    description: "Gereja megah karya Antoni Gaudí.",
-    audioDescription:
-      "Sagrada Familia merupakan salah satu mahakarya arsitektur paling luar biasa di dunia yang terletak di kota Barcelona, Spanyol, dan dirancang oleh arsitek visioner Antoni Gaudí sebagai simbol perpaduan antara seni, spiritualitas, dan inovasi. Pembangunan basilika ini dimulai pada tahun 1882 dan hingga kini masih terus berlangsung, menjadikannya salah satu proyek konstruksi terpanjang dalam sejarah modern, sekaligus mencerminkan dedikasi lintas generasi dalam mewujudkan visi artistik yang kompleks. Gaudí mengembangkan desain Sagrada Familia dengan pendekatan yang sangat unik, menggabungkan bentuk-bentuk organik yang terinspirasi dari alam dengan struktur geometris yang rumit, sehingga menghasilkan bangunan yang tidak hanya indah secara visual tetapi juga memiliki makna simbolis yang mendalam. Fasad-fasadnya menggambarkan berbagai tahap kehidupan Yesus Kristus, mulai dari kelahiran, penderitaan, hingga kebangkitan, dengan detail ukiran yang sangat halus dan ekspresif, menciptakan pengalaman visual yang penuh emosi dan spiritualitas. Salah satu ciri paling mencolok dari Sagrada Familia adalah menara-menara tingginya yang menjulang ke langit, yang dirancang untuk melambangkan hubungan antara manusia dan Tuhan, serta menciptakan siluet yang sangat khas di cakrawala Barcelona. Interior basilika ini juga tidak kalah menakjubkan, dengan pilar-pilar tinggi yang menyerupai batang pohon dan jendela kaca patri berwarna-warni yang memancarkan cahaya alami ke dalam ruangan, menciptakan suasana yang hampir mistis dan sangat menenangkan. Secara struktural, Sagrada Familia mencerminkan inovasi teknik yang melampaui zamannya, di mana Gaudí menggunakan model matematika dan eksperimen fisik untuk menciptakan desain yang stabil sekaligus artistik. Hingga saat ini, bangunan ini tidak hanya menjadi tempat ibadah, tetapi juga simbol identitas budaya dan kebanggaan nasional Spanyol, serta salah satu destinasi wisata paling terkenal di dunia yang menarik jutaan pengunjung setiap tahunnya. Dengan perpaduan antara keindahan artistik, makna religius, dan inovasi arsitektur, Sagrada Familia berdiri sebagai bukti nyata bahwa kreativitas manusia mampu menciptakan sesuatu yang melampaui batas waktu, menjadikannya sebagai salah satu warisan budaya paling menginspirasi dalam sejarah peradaban manusia.",
+
+    location: "Barcelona",
+    continent: "Europe",
+    yearBuilt: "1882",
+
+    description:
+      "Sagrada Familia adalah Sebuah basilika Katolik megah di Barcelona yang menjadi ikon arsitektur Modernisme Catalan. Dirancang oleh Antoni Gaudí, bangunan ini memadukan bentuk-bentuk geometris organik yang terinspirasi dari alam dan hutan. Konstruksinya murni didanai oleh donasi publik dan tiket masuk wisatawan, menjadikannya salah satu proyek pembangunan terlama di dunia.",
+
     modelPath: "/models/barcelona_sagrada_familia_2.glb",
+    audioFile: "/audio/sagrada_familia.mp3",
+
+    themeColor: "#f59e0b",
   },
+
   {
     id: "russia",
     name: "Saint Basil Cathedral",
     country: "Russia",
     isoCode: "ru",
-    description: "Katedral berwarna-warni di Moskow.",
-    audioDescription:
-      "Katedral Saint Basil merupakan salah satu bangunan paling ikonik di dunia yang terletak di Lapangan Merah, Moskow, Rusia, dan dikenal luas karena desain arsitekturnya yang unik serta warna-warnanya yang mencolok. Dibangun pada abad ke-16 atas perintah Tsar Ivan IV, yang juga dikenal sebagai Ivan the Terrible, katedral ini didirikan untuk memperingati kemenangan Rusia atas Kekhanan Kazan, menjadikannya simbol kekuatan dan kejayaan negara pada masa itu. Tidak seperti katedral pada umumnya, Saint Basil terdiri dari sembilan kapel yang masing-masing memiliki kubah berbentuk bawang dengan desain dan warna yang berbeda, menciptakan tampilan yang dramatis dan hampir menyerupai karya seni imajinatif. Struktur ini dirancang oleh arsitek Postnik Yakovlev dan mencerminkan perpaduan antara gaya arsitektur Rusia tradisional dengan elemen artistik yang sangat ekspresif. Interior katedral juga tidak kalah menarik, dengan lorong-lorong sempit, dekorasi dinding yang kaya akan motif, serta lukisan-lukisan religius yang menciptakan suasana spiritual yang mendalam. Selama berabad-abad, katedral ini telah menjadi saksi berbagai peristiwa penting dalam sejarah Rusia, termasuk perubahan politik, revolusi, dan perkembangan budaya yang membentuk identitas bangsa tersebut. Meskipun pernah menghadapi ancaman penghancuran pada masa pemerintahan Soviet, Saint Basil berhasil dipertahankan dan kini berfungsi sebagai museum sekaligus simbol nasional yang sangat dihormati. Keunikan desainnya yang tidak simetris dan penuh warna menjadikannya salah satu bangunan paling mudah dikenali di dunia, serta sering dianggap sebagai representasi visual dari keberanian, kreativitas, dan kekayaan budaya Rusia. Hingga saat ini, jutaan wisatawan dari berbagai negara datang ke Moskow untuk menyaksikan langsung keindahan katedral ini, menjadikannya sebagai salah satu destinasi paling berharga dalam dunia arsitektur dan sejarah global, serta simbol abadi dari identitas dan warisan Rusia.",
+
+    location: "Moscow",
+    continent: "Europe",
+    yearBuilt: "1561",
+
+    description:
+      "Saint Basil Cathedral adalah Katedral unik yang berdiri di pusat kota Moskow ini aslinya bernama Cathedral of the Intercession. Bangunan ini terkenal karena desain geometrisnya yang asimetris namun harmonis, menampilkan sembilan kapel dengan kubah berbentuk bawang yang dicat dengan pola warna-warni cerah, mencerminkan gaya arsitektur tradisional Rusia yang khas.",
+
     modelPath: "/models/saint_basils_cathedral_3d_model.glb",
+    audioFile: "/audio/saint_basil.mp3",
+
+    themeColor: "#dc2626",
   },
+
   {
     id: "turkey",
     name: "Hagia Sophia",
     country: "Turkey",
     isoCode: "tr",
-    description: "Bangunan bersejarah dengan nilai budaya tinggi.",
-    audioDescription:
-      "Hagia Sophia merupakan salah satu bangunan paling bersejarah dan berpengaruh di dunia yang terletak di Istanbul, Turki, dan dikenal sebagai simbol perpaduan antara budaya, agama, serta peradaban yang berbeda sepanjang sejarah. Dibangun pertama kali pada tahun 537 Masehi oleh Kaisar Bizantium Justinian I, Hagia Sophia awalnya berfungsi sebagai katedral terbesar di dunia dan menjadi pusat kekristenan Ortodoks selama berabad-abad. Keagungan bangunan ini tercermin dari kubah raksasanya yang tampak melayang di udara, sebuah pencapaian luar biasa dalam teknik arsitektur pada zamannya yang menginspirasi banyak bangunan setelahnya. Interiornya dihiasi dengan mosaik emas yang menggambarkan tokoh-tokoh religius, menciptakan suasana sakral yang penuh kemegahan dan spiritualitas. Setelah penaklukan Konstantinopel oleh Kesultanan Utsmaniyah pada tahun 1453, Hagia Sophia diubah menjadi masjid, di mana elemen-elemen Islam seperti kaligrafi Arab, mihrab, dan menara ditambahkan, menciptakan perpaduan unik antara seni Kristen dan Islam dalam satu bangunan. Perubahan fungsi ini tidak menghilangkan keindahan aslinya, melainkan justru memperkaya nilai historis dan budayanya sebagai simbol toleransi dan transformasi peradaban. Pada abad ke-20, Hagia Sophia sempat dijadikan museum sebelum akhirnya kembali difungsikan sebagai masjid, menjadikannya sebagai salah satu situs yang memiliki perjalanan sejarah paling kompleks di dunia. Secara arsitektural, bangunan ini menjadi inspirasi bagi banyak masjid besar, termasuk Masjid Biru di Istanbul, serta menjadi contoh bagaimana inovasi teknik dapat berpadu dengan nilai estetika dan spiritual. Hingga saat ini, Hagia Sophia tetap menjadi daya tarik utama bagi jutaan pengunjung dari berbagai negara yang datang untuk menyaksikan langsung keindahan, keagungan, dan makna historis yang terkandung di dalamnya, menjadikannya bukan hanya sebagai bangunan, tetapi sebagai simbol perjalanan panjang peradaban manusia yang penuh dinamika dan makna mendalam.",
+
+    location: "Istanbul",
+    continent: "Europe/Asia",
+    yearBuilt: "537",
+
+    description:
+      "Hagia Sophia adalah Sebuah mahakarya arsitektur yang dibangun di Konstantinopel (sekarang Istanbul) pada abad ke-6 di bawah perintah Kaisar Bizantium, Justinian I. Monumen ini merevolusi sejarah arsitektur dunia melalui teknik pembuatan kubah gantung raksasanya yang sangat besar, menjadikannya simbol keagamaan dan politik yang penting lintas zaman.",
+
     modelPath: "/models/mosque.glb",
+    audioFile: "/audio/hagia_sophia.mp3",
+
+    themeColor: "#c084fc",
   },
+
   {
     id: "greece",
     name: "Parthenon",
     country: "Greece",
     isoCode: "gr",
-    description: "Kuil kuno di Athena.",
-    audioDescription:
-      "Parthenon merupakan salah satu mahakarya arsitektur paling berpengaruh dalam sejarah peradaban manusia yang terletak di atas bukit Akropolis di Athena, Yunani, dan dibangun pada abad ke-5 sebelum Masehi sebagai penghormatan kepada dewi Athena, pelindung kota tersebut. Kuil ini didirikan pada masa kejayaan Yunani kuno di bawah kepemimpinan Pericles dan dirancang oleh arsitek Iktinos dan Kallikrates, dengan pengawasan artistik dari pematung terkenal Phidias, menjadikannya simbol sempurna dari harmoni, proporsi, dan keindahan dalam arsitektur klasik. Dibangun menggunakan marmer putih berkualitas tinggi, Parthenon menampilkan gaya arsitektur Doric yang dipadukan dengan elemen Ionic, menciptakan keseimbangan visual yang luar biasa melalui kolom-kolom megah, detail ukiran halus, dan struktur yang tampak sederhana namun sangat presisi. Salah satu keunikan Parthenon adalah penggunaan teknik optik canggih, seperti sedikit lengkungan pada lantai dan kolom yang dirancang untuk mengoreksi ilusi visual, sehingga bangunan ini terlihat sempurna dari berbagai sudut pandang, menunjukkan tingkat kecerdasan dan ketelitian luar biasa dari para pembangunnya. Selain sebagai tempat ibadah, Parthenon juga berfungsi sebagai simbol kekuatan, kejayaan, dan identitas budaya Athena, mencerminkan nilai-nilai demokrasi, seni, dan intelektualitas yang berkembang pesat pada masa itu. Seiring berjalannya waktu, bangunan ini mengalami berbagai perubahan fungsi, mulai dari gereja Kristen hingga masjid pada masa Kekaisaran Ottoman, sebelum akhirnya menjadi situs bersejarah yang dilindungi dan dipelajari hingga saat ini. Meskipun sebagian strukturnya telah rusak akibat perang dan usia, Parthenon tetap berdiri sebagai simbol keabadian warisan budaya Yunani kuno dan menjadi salah satu inspirasi terbesar dalam dunia arsitektur modern. Hingga kini, jutaan pengunjung dari seluruh dunia datang ke Akropolis untuk menyaksikan langsung keagungan Parthenon, merasakan aura sejarah yang kuat, serta memahami bagaimana bangunan ini tidak hanya merepresentasikan keindahan fisik, tetapi juga pencapaian intelektual dan artistik manusia yang melampaui batas zaman.",
+
+    location: "Athens",
+    continent: "Europe",
+    yearBuilt: "432 BC",
+
+    description:
+      "Parthenon merupakan Kuil kuno yang mendominasi bukit Akropolis di Athena, dibangun antara tahun 447 dan 432 SM. Dirancang oleh arsitek Ictinus dan Callicrates di bawah pengawasan pemahat Phidias, kuil ini merupakan pencapaian tertinggi arsitektur klasik ordo Dorik yang awalnya dibangun untuk menyimpan patung emas dan gading raksasa dewi Athena Parthenos.",
+
     modelPath: "/models/parthenon_athenes.glb",
+    audioFile: "/audio/parthenon.mp3",
+
+    themeColor: "#d4d4d8",
   },
+
   {
     id: "mexico",
     name: "Chichen Itza",
     country: "Mexico",
     isoCode: "mx",
-    description: "Piramida peradaban Maya.",
-    audioDescription:
-      "Chichen Itza merupakan salah satu situs arkeologi paling terkenal di dunia yang terletak di Semenanjung Yucatán, Meksiko, dan menjadi bukti kejayaan serta kecanggihan peradaban Maya pada masa lalu. Kompleks ini berkembang pesat antara abad ke-7 hingga ke-10 dan berfungsi sebagai pusat politik, ekonomi, dan keagamaan yang sangat penting bagi masyarakat Maya. Salah satu struktur paling ikonik di kawasan ini adalah piramida El Castillo, yang juga dikenal sebagai Kuil Kukulkan, sebuah bangunan megah yang dirancang dengan tingkat presisi astronomi yang luar biasa, di mana pada saat ekuinoks, bayangan yang terbentuk di tangga piramida menciptakan ilusi seekor ular yang meluncur turun, melambangkan dewa Kukulkan. Keunikan ini menunjukkan bahwa masyarakat Maya memiliki pemahaman mendalam tentang pergerakan matahari, waktu, dan kosmos, serta mampu mengintegrasikannya ke dalam arsitektur mereka. Selain piramida, Chichen Itza juga memiliki berbagai struktur lain seperti lapangan permainan bola terbesar di Mesoamerika, kuil-kuil, dan observatorium yang digunakan untuk mempelajari bintang dan planet. Dari segi arsitektur, bangunan-bangunan di Chichen Itza menampilkan perpaduan gaya Maya dan Toltec, mencerminkan interaksi budaya yang kompleks dan dinamis pada masa itu. Lebih dari sekadar situs sejarah, Chichen Itza merupakan simbol kecerdasan, spiritualitas, dan inovasi manusia dalam memahami dunia di sekitarnya. Hingga saat ini, tempat ini menjadi salah satu dari Tujuh Keajaiban Dunia Baru dan menarik jutaan pengunjung setiap tahunnya yang datang untuk menyaksikan langsung keindahan, misteri, dan warisan budaya yang luar biasa dari peradaban Maya, menjadikannya sebagai salah satu destinasi paling penting dalam sejarah dan arkeologi dunia.",
+
+    location: "Yucatán",
+    continent: "North America",
+    yearBuilt: "600 AD",
+
+    description:
+      "Chichen Itza adalah situs bersejarah peradaban Maya yang terkenal dengan piramida El Castillo.",
+
     modelPath: "/models/chichen_itza_pyramid_3d_reconstruction.glb",
+    audioFile: "/audio/chichen_itza.mp3",
+
+    themeColor: "#f97316",
   },
 ];
