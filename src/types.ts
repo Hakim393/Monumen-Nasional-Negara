@@ -221,7 +221,7 @@ export const MONUMENTS: Monument[] = [
       "Burj Khalifa merupakan gedung tertinggi di dunia dan simbol kemajuan modern kota Dubai.",
 
     modelPath: "/models/free__burj_khalifa_dubai.glb",
-    audioFile: "/audio/Burj khalifa.mp3",
+    audioFile: "/audio/Burj khalifa.MP3",
 
     themeColor: "#94a3b8",
   },
