@@ -69,7 +69,7 @@ export const MONUMENTS: Monument[] = [
       "Menara Eiffel adalah landmark paling terkenal di Paris yang menjadi simbol romantisme, inovasi, dan kemajuan teknologi modern.",
 
     modelPath: "/models/eiffel.glb",
-    audioFile: "/audio/eiffel.mp4",
+    audioFile: "/audio/eiffel.mp3",
 
     themeColor: "#94a3b8",
   },
@@ -183,7 +183,7 @@ export const MONUMENTS: Monument[] = [
       "Tokyo Tower adalah menara komunikasi ikonik Jepang yang melambangkan modernisasi pasca perang.",
 
     modelPath: "/models/tokyo_tower.glb",
-    audioFile: "/audio/tokyo_tower.mp4",
+    audioFile: "/audio/tokyo_tower.mp3",
 
     themeColor: "#ef4444",
   },
@@ -221,7 +221,7 @@ export const MONUMENTS: Monument[] = [
       "Burj Khalifa merupakan gedung tertinggi di dunia dan simbol kemajuan modern kota Dubai.",
 
     modelPath: "/models/free__burj_khalifa_dubai.glb",
-    audioFile: "/audio/Burj khalifa.mp4",
+    audioFile: "/audio/Burj khalifa.mp3",
 
     themeColor: "#94a3b8",
   },
